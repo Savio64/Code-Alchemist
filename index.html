@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScamShield | Stay Safe Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-glob"></div>
+    
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <i class="fa-solid fa-shield-halved"></i> ScamShield
+            </div>
+            <div class="nav-links">
+                <a href="#detector">Detector</a>
+                <a href="#education">Learn</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-content">
+                <h1>Spot Scams <span class="gradient-text">Before They Strike</span></h1>
+                <p>Your personal AI-powered assistant to detect online fraud. protecting you and your loved ones from digital threats.</p>
+                <a href="#detector" class="btn btn-primary">Try Detector</a>
+            </div>
+        </section>
+
+        <section id="detector" class="detector-section container">
+            <div class="glass-card">
+                <h2><i class="fa-solid fa-magnifying-glass-chart"></i> Scam Detector</h2>
+                <p class="subtitle">Paste an email, SMS, or message below to check if it's safe.</p>
+                
+                <div class="input-group">
+                    <textarea id="scamInput" placeholder="Paste the suspicious text here... (e.g., 'You won a lottery! Click here to claim.')"></textarea>
+                </div>
+                
+                <button id="analyzeBtn" class="btn btn-primary btn-large">
+                    <i class="fa-solid fa-bolt"></i> Analyze Now
+                </button>
+
+                <div id="resultArea" class="result-area hidden">
+                    <div class="result-header">
+                        <i id="resultIcon" class="fa-solid"></i>
+                        <h3 id="resultTitle">analysis Complete</h3>
+                    </div>
+                    <p id="resultDescription"></p>
+                    <ul id="riskFactors" class="risk-factors"></ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education-section container">
+            <div class="section-header">
+                <h2>Learn to Stay Safe</h2>
+                <p>Tailored advice for everyone.</p>
+            </div>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-target="kids">
+                    <i class="fa-solid fa-child-reaching"></i> For Kids
+                </button>
+                <button class="tab-btn" data-target="adults">
+                    <i class="fa-solid fa-user-shield"></i> For Adults
+                </button>
+                <button class="tab-btn" data-target="elders">
+                    <i class="fa-solid fa-glasses"></i> For Elders
+                </button>
+            </div>
+
+            <div class="tab-content active" id="kids">
+                <div class="guide-grid">
+                    <div class="guide-card">
+                        <div class="icon-box color-1">
+                            <i class="fa-solid fa-user-secret"></i>
+                        </div>
+                        <h3>Stranger Danger</h3>
+                        <p>Just like outside, don't talk to strangers online. Never tell them your name or school.</p>
+                    </div>
+                    <div class="guide-card">
+                        <div class="icon-box color-2">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <h3>Free Robux?</h3>
+                        <p>If someone offers free game money or skins, it's a trick! Discuss it with your parents first.</p>
+                    </div>
+                    <div class="guide-card">
+                        <div class="icon-box color-3">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <h3>Secret Passwords</h3>
+                        <p>Your password is like your house key. Only give it to your parents, never to friends online.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="adults">
+                <div class="guide-grid">
+                    <div class="guide-card">
+                        <div class="icon-box color-1">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </div>
+                        <h3>Phishing Emails</h3>
+                        <p>Check the sender's email carefully. Banks won't ask for your password via email.</p>
+                    </div>
+                    <div class="guide-card">
+                        <div class="icon-box color-2">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <h3>Shopping Scams</h3>
+                        <p>If a deal looks too good to be true (80% off brand new iPhones), it probably is.</p>
+                    </div>
+                    <div class="guide-card">
+                        <div class="icon-box color-3">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <h3>Investment Fraud</h3>
+                        <p>Be wary of "guaranteed returns" or pressure to invest in crypto quickly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="elders">
+                <div class="guide-grid">
+                    <div class="guide-card">
+                        <div class="icon-box color-1">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <h3>Tech Support Scams</h3>
+                        <p>Microsoft or Apple will NEVER call you to fix a "virus". Hang up immediately.</p>
+                    </div>
+                    <div class="guide-card">
+                        <div class="icon-box color-2">
+                            <i class="fa-solid fa-heart-crack"></i>
+                        </div>
+                        <h3>Romance Scams</h3>
+                        <p>Be careful if an online friend asks for money for "travel" or "emergencies".</p>
+                    </div>
+                    <div class="guide-card">
+                        <div class="icon-box color-3">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3>Grandparent Scam</h3>
+                        <p>If a "grandchild" calls asking for money secretly, call their parents to verify first.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ScamShield. Stay Alert, Stay Safe.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
