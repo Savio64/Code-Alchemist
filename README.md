@@ -139,8 +139,8 @@ Add screenshots of your website or application inside the `screenshots/` folder.
 
 
 Mention them here:
-- Screenshot 1 – Description  
-- Screenshot 2 – Description  
+- Screenshot 1 – Ai detector 
+- Screenshot 2 – Home Screen  
 
 *(Screenshots are mandatory for evaluation)*
 
@@ -226,4 +226,5 @@ A premium web application designed to detect scams, educate users, and provide r
     -   Paste those commands into your VS Code terminal and press Enter.
 
 5.  **Done!** Your code is now live on GitHub.
+
 
