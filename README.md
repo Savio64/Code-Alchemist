@@ -4,6 +4,8 @@ A premium web application designed to detect scams, educate users, and provide r
 
 ## 🚀 Features
 - **AI Scam Detector**: Analyze text and links for fraud potential.
+- **QR Code Scanner**: Upload image to scan for embedded malicious links.
+- **AI Chatbot**: Instant assistant to answer fraud-related questions.
 - **Risk Scoring**: Visual gauge showing safety levels.
 - **Live Dashboard**: Real-time statistics using Chart.js.
 - **Awareness Center**: Educational cards on common scams.
